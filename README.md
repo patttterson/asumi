@@ -1,7 +1,11 @@
 # asumi
 
+patty's personal link shortener
+
+Can be found here: https://minji.love/s/
+
 > [!CAUTION]
-> `/admin` is not protected. If this is a public instance, make sure you use Cloudflare Access or something similar to prevent unauthorized access.
+> `/admin` is not protected. If you plan to host a public instance, make sure you use Cloudflare Access or something similar to prevent unauthorized access.
 
 ## Developing
 
