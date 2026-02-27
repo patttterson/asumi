@@ -1,5 +1,4 @@
 <script lang="ts">
-	import favicon from '$lib/assets/favicon.svg';
 	import '$lib/css/fonts.css';
 	import { dev } from '$app/environment';
 
@@ -12,7 +11,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>{title}</title>
 	<meta name="description" property="og:description" content="patty's personal link shortener" />
-	<link rel="icon" href={favicon} />
 	<link rel="dns-prefetch" href="https://minji.love/" />
 </svelte:head>
 
