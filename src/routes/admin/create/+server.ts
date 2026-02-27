@@ -2,6 +2,7 @@ import { error, redirect } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
 import { v7 as uuidv7 } from 'uuid';
 import { deleteCachedLinkBySlug } from '$lib/server/link-cache';
+import { resolve } from '$app/paths';
 
 export const POST: RequestHandler = async ({ request, platform }) => {
 	const db = platform?.env?.nanao;
@@ -29,5 +30,5 @@ export const POST: RequestHandler = async ({ request, platform }) => {
 
 	platform?.context.waitUntil(deleteCachedLinkBySlug(platform, slug));
 
-	redirect(303, '/admin');
+	redirect(303, resolve('/admin'));
 };

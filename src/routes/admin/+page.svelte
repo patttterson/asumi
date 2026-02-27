@@ -45,7 +45,7 @@
 
 <h1>admin portal</h1>
 
-<form class="create-form" method="POST" action="/admin/create">
+<form class="create-form" method="POST" action={resolve('/admin/create')}>
 	<div class="slug-field">
 		<span class="prefix" id="slug-prefix">{slugPrefix}</span>
 		<input
@@ -74,7 +74,7 @@
 				<a href={resolve(`/${link.slug}`)} target="_blank" rel="noreferrer">/{link.slug}</a>
 				<div class="link-actions">
 					<span>{link.clicks} click{link.clicks !== 1 ? 's' : ''}</span>
-					<form method="POST" action={`/admin/delete/${encodeURIComponent(link.slug)}`}>
+					<form method="POST" action={resolve(`/admin/delete/${encodeURIComponent(link.slug)}`)}>
 						<button
 							type="submit"
 							class:delete-armed={armedSlug === link.slug}

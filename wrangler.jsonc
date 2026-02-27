@@ -3,12 +3,7 @@
 	"main": ".svelte-kit/cloudflare/_worker.js",
 	"compatibility_flags": ["nodejs_als"],
 	"compatibility_date": "2026-02-27",
-	"routes": [
-    "minji.love/s/*",
-    "minji.love/s",
-    "www.minji.love/s/*",
-    "www.minji.love/s"
-  ],
+	"routes": ["minji.love/s/*", "minji.love/s", "www.minji.love/s/*", "www.minji.love/s"],
 	"assets": {
 		"binding": "ASSETS",
 		"directory": ".svelte-kit/cloudflare"

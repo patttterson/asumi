@@ -1,6 +1,7 @@
 import { error, json, redirect } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
 import { deleteCachedLinkBySlug } from '$lib/server/link-cache';
+import { resolve } from '$app/paths';
 
 const SLUG_PATTERN = /^[a-zA-Z0-9_-]+$/;
 
@@ -25,7 +26,7 @@ const deleteBySlug = async (platform: App.Platform | undefined, slug: string) =>
 
 export const POST: RequestHandler = async ({ platform, params }) => {
 	await deleteBySlug(platform, params.slug);
-	redirect(303, '/admin');
+	redirect(303, resolve('/admin'));
 };
 
 export const DELETE: RequestHandler = async ({ platform, params }) => {
