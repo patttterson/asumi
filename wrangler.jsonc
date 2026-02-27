@@ -7,11 +7,7 @@
     "minji.love/s/*",
     "minji.love/s",
     "www.minji.love/s/*",
-    "www.minji.love/s",
-    "minji.love/s/admin/*",
-    "minji.love/s/admin",
-    "www.minji.love/s/admin/*",
-    "www.minji.love/s/admin"
+    "www.minji.love/s"
   ],
 	"assets": {
 		"binding": "ASSETS",
