@@ -1,0 +1,17 @@
+{
+	"name": "asumi",
+	"main": ".svelte-kit/cloudflare/_worker.js",
+	"compatibility_flags": ["nodejs_als"],
+	"compatibility_date": "2026-02-27",
+	"assets": {
+		"binding": "ASSETS",
+		"directory": ".svelte-kit/cloudflare"
+	},
+	"d1_databases": [
+		{
+			"binding": "nanao",
+			"database_name": "nanao",
+			"database_id": "c378b72d-86f3-4059-ab6d-50f8bae53ba5"
+		}
+	]
+}
