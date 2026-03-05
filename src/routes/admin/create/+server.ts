@@ -13,7 +13,7 @@ export const POST: RequestHandler = async ({ request, platform }) => {
 		url: string;
 	};
 
-	if (!/^[a-zA-Z0-9_-]+$/.test(slug)) {
+	if (!/^[A-Za-z0-9\-._~!$&'()*+,;=:@]+$/.test(slug)) {
 		throw error(400, { message: 'Invalid slug format' });
 	}
 

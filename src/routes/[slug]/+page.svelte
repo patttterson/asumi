@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { resolve } from '$app/paths';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
@@ -9,7 +8,8 @@
 	<p>Redirect disabled.</p>
 	<p>
 		Destination:
-		<a href={resolve(data.url)} rel="noreferrer" target="_blank">{data.url}</a>
+		<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+		<a href={data.url} rel="noreferrer" target="_blank">{data.url}</a>
 	</p>
 {:else}
 	<p>Redirecting…</p>
